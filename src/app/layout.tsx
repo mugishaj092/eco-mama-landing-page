@@ -5,6 +5,8 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider } from "antd";
 import NavHeader from "@/components/layout/header";
 import antdTheme from "@/utils/config/antdConfig";
+import FooterComp from "@/components/layout/footer";
+import favicon from "../assets/images/eco-mama.png";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,12 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" type="image/png" href="../assets/images/eco-mama.png" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ConfigProvider theme={antdTheme}>
           <NavHeader />
           <AntdRegistry>{children}</AntdRegistry>
+          <FooterComp />
         </ConfigProvider>
       </body>
     </html>

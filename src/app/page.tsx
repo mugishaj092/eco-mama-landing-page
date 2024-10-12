@@ -1,4 +1,4 @@
-import Blogs from "@/components/blogs";
+import Blogs from "@/components/hubs";
 import Hero from "@/components/hero-section";
 import WhyChooseUs from "@/components/why-choose-us";
 

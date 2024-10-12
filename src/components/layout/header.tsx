@@ -28,7 +28,7 @@ const items = [
     },
     {
         key: 5,
-        label: <Link href="/blogs">Blogs</Link>,
+        label: <Link href="/contacts">Contacts</Link>,
     },
 ];
 
@@ -43,7 +43,7 @@ function NavHeader() {
     }, []);
 
     return (
-        <Header
+        <div
             style={{
                 display: 'flex',
                 background: '#fff',
@@ -75,11 +75,11 @@ function NavHeader() {
                 </>
             ) : (
                 <>
-                <Image src={logo} alt="logo" width={60} height={60} />
+                        <Image src={logo} alt="logo" width={60} height={60} />
                     {isClient && <BurgerButton />}
                 </>
             )}
-        </Header>
+        </div>
     );
 }
 
