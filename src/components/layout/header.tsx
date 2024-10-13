@@ -3,16 +3,17 @@ import { Menu, Layout, Button } from 'antd';
 import React, { useState, useEffect } from 'react';
 import logo from "@/assets/images/eco-mama.png";
 import Image from 'next/image';
-import Link from 'next/link';  // Import Link from Next.js
+import Link from 'next/link';
 import useWindowDimensions from '@/hooks/useScreenSize';
 import BurgerButton from './burger';
+import { usePathname } from 'next/navigation'; // Import usePathname
 
 const { Header } = Layout;
 
 const items = [
     {
         key: 1,
-        label: <Link href="/">Home</Link>,  // Wrap label with Link
+        label: <Link href="/">Home</Link>,
     },
     {
         key: 2,
@@ -33,17 +34,20 @@ const items = [
 ];
 
 function NavHeader() {
-    const { isDesktop, isMobile } = useWindowDimensions();
-    const [isClosed, setIsClosed] = useState(true);
+    const { isDesktop } = useWindowDimensions();
+    const [isClosed, setIsClosed] = useState(false);
     const [isClient, setIsClient] = useState(false);
-
+    const currentPath = usePathname();
 
     useEffect(() => {
         setIsClient(true);
     }, []);
 
+    // Determine the selected key based on the current path
+    const selectedKey = items.find(item => item.label.props.href === currentPath)?.key || '1';
+
     return (
-        <div
+        <header
             style={{
                 display: 'flex',
                 background: '#fff',
@@ -59,11 +63,10 @@ function NavHeader() {
                 <>
                     <Image src={logo} alt="logo" width={60} height={60} />
                     <div>
-                        
                         <Menu
                             theme="light"
                             mode="horizontal"
-                            defaultSelectedKeys={['2']}
+                            selectedKeys={[String(selectedKey)]} // Set the active key here
                             items={items}
                             style={{ flex: 1, borderWidth: 0, border: 'none', borderBottom: 'none' }}
                             className="fixed-menu"
@@ -75,11 +78,26 @@ function NavHeader() {
                 </>
             ) : (
                 <>
-                        <Image src={logo} alt="logo" width={60} height={60} />
-                    {isClient && <BurgerButton />}
+                    <Image src={logo} alt="logo" width={60} height={60} />
+                    {isClosed && (
+                        <div className='absolute top-14 right-0 w-full bg-white flex flex-col p-10 gap-2'>
+                            {items.map(item => (
+                                <Link
+                                    key={item.key}
+                                    href={item.label.props.href}
+                                    className={`p-2 rounded-md ${currentPath === item.label.props.href ? 'text-primary bg-primary/10' : ''}`} // Add active style
+                                    onClick={() => setIsClosed(!isClosed)}
+                                >
+                                    {item.label.props.children}
+                                </Link>
+                            ))}
+                            <Button type="primary">Get Started</Button>
+                        </div>
+                    )}
+                    {isClient && <BurgerButton isClosed={isClosed} setIsClosed={setIsClosed} />}
                 </>
             )}
-        </div>
+        </header>
     );
 }
 
