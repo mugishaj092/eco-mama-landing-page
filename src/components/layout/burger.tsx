@@ -1,8 +1,6 @@
-import { useState } from "react";
 import "@/styles/Button.css";
 
-const BurgerButton = () => {
-    const [isClosed, setIsClosed] = useState(false);
+const BurgerButton = ({ isClosed, setIsClosed }:any) => {
 
     const toggleMenu = () => {
         setIsClosed(!isClosed);
