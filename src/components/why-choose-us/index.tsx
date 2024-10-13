@@ -4,6 +4,7 @@ import { Button } from 'antd'
 import Image from 'next/image'
 import React from 'react'
 
+
 const WhyChooseUs = () => {
     return (
         <div className='lg:px-20 max-sm:px-5 max-md:px-10 md:px-10 mt-20 bg-[#f4f5f4] py-10 flex justify-center gap-20 max-sm:py-10 max-md:flex-wrap w-full'>
