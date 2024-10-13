@@ -49,7 +49,6 @@ const Contacts: React.FC = () => {
                                     </p>
                                 </div>
                             </div>
-
                             <div className="mb-8 flex w-full max-w-[370px]">
                                 <div
                                     className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]"
