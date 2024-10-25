@@ -28,7 +28,7 @@ body {
 
 
 .fixed-menu .ant-menu-item {
-	@apply flex h-14 rounded-3xl !important;
+	@apply flex h-14 rounded-3xl text-center min-w-20 !important;
   padding: 0 30px;
 }
 .ant-btn .custom-btn {
