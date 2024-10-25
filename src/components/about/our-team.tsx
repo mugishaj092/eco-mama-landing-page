@@ -36,7 +36,7 @@ function OurTeam() {
                             Joie Sophia UMUHOZA 
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                        Founder,and ED of Eco-mama 
+                        Founder,and CEO of Eco-mama 
                         </p>
                     </div>
                     <div className="flex flex-col items-center text-center">
@@ -49,7 +49,7 @@ function OurTeam() {
                             Jospine Sonia UWIMENA
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                        Registered midwife , women program lead
+                         Women warriors program lead
                         </p>
                     </div>
                  
@@ -64,7 +64,7 @@ function OurTeam() {
                             Jovise Solive UMUHIRE
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                        Medical student, and COO of ECO-MAMA
+                         COO of ECO-MAMA
                         </p>
                     </div>
 
@@ -78,7 +78,7 @@ function OurTeam() {
                             ISHIMWE Ami Paradis
                         </h3>
                         <p className="text-primary font-medium mt-1">
-                            Software Engineer
+                            CTO and Co-founder
                         </p>
                     </div>
 
