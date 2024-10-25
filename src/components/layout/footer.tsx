@@ -23,7 +23,7 @@ function FooterComp() {
                                 />
                             </a>
                             <p className="mb-7 text-base text-body-color text-gray-200">
-                                ECO-MAMA is a digital health platform that helps vulnerable women in Africa, particularly Rwanda, cope with the psychological impact of climate change
+                            eco-mama:where women meets sustainability, and mental health wellness
                             </p>
                             <p
                                 className="flex items-center text-sm font-medium text-gray-200"

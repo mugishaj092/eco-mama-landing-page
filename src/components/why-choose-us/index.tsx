@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
             <div className='w-1/2 flex flex-col justify-between max-md:w-full'>
                 <div>
                     <h1 className='text-3xl font-bold text-primary max-md:text-center mb-5'>Why Choose Us?</h1>
-                    <p className='text-sm text-gray-500'>Our team of experts is highly knowledgeable about all aspects of digital marketing and has experience helping businesses achieve their goals. We strive to stay ahead of industry trends so we can give our clients the best results possible.</p>
+                    <p className='text-sm text-gray-500'>Our team of experts is deeply versed in the mental health impacts of climate change, supporting individuals and communities in building resilience. We stay at the forefront of emerging research to deliver the best guidance and resources possible for our clients.</p>
                 </div>
                 <Image src={images.profile} alt='whychooseus' height={345} />
                 <div>
@@ -23,19 +23,26 @@ const WhyChooseUs = () => {
                     <div className='bg-[#004fb627] p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
                         <Image src={icons.team} alt='team' />
                         <div className='flex gap-2 flex-col'>
-                            <h1 className='font-bold'>Experienced Team</h1>
-                            <p className='text-sm text-gray-500'>We've got a stellar team with polished skills and high profiles.</p>
+                            <h1 className='font-bold'>we offer online counseling</h1>
+                            <p className='text-sm text-gray-500'> Connect with certified mental health professionals from the comfort of your home, ensuring personalized support and confidentiality.</p>
                         </div>
                     </div>
                     <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
                         <Image src={icons.service} alt='team' />
                         <div className='flex gap-2 flex-col'>
-                            <h1 className='font-bold'>Service You Can Rely On</h1>
-                            <p className='text-sm text-gray-500'>By responding to our client's needs, we provide them with reliable and applicable services.</p>
+                            <h1 className='font-bold'>AI-driven,mental health assessment</h1>
+                            <p className='text-sm text-gray-500'>Our AI-assisted mental health assessment tool provides accurate, up-to-date results.</p>
                         </div>
                     </div>
                 </div>
                 <div className='flex justify-between gap-4 max-sm:flex-wrap'>
+                <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
+                        <Image src={icons.consultation} alt='team' />
+                        <div className='flex gap-2 flex-col'>
+                            <h1 className='font-bold'> virtual consultation</h1>
+                            <p className='text-sm text-gray-500'>we provide virtual consultation with experienced mental health professionals.</p>
+                        </div>
+                    </div>
                     <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
                         <Image src={icons.hours} alt='team' />
                         <div className='flex gap-2 flex-col'>
@@ -43,13 +50,7 @@ const WhyChooseUs = () => {
                             <p className='text-sm text-gray-500'>we have a strong customer support platform to serve our customer 24/7.</p>
                         </div>
                     </div>
-                    <div className='bg-white p-8 max-sm:p-4 rounded-xl drop-shadow-sm hover:drop-shadow-md flex gap-4 flex-col w-[100%]'>
-                        <Image src={icons.growth} alt='team' />
-                        <div className='flex gap-2 flex-col'>
-                            <h1 className='font-bold'>Sustainable Growth</h1>
-                            <p className='text-sm text-gray-500'>Sustainable growth in digital marketing involves creating a long-term strategy.</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ const items = [
     },
     {
         key: 3,
-        label: <Link href="/services">Services</Link>,
+        label: <Link href="/programs">Programs</Link>,
     },
     {
         key: 4,
